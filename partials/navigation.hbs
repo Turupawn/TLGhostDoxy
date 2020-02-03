@@ -1,0 +1,28 @@
+
+ <ul id="navigation-menu" class="slimmenu">         
+                     <li>
+                        <a href="#">Home</a>
+                        <ul>
+                           <li><a href="{{@site.url}}">Home</a></li>
+                           <li><a href="/home-v2">Home v2</a></li>
+                           <li><a href="/home-v3">Home v3</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">Page</a>
+                        <ul>
+                           <li><a href="/tag/etube">Category</a></li>
+                           <li><a href="/author/ghost/">Author</a></li>
+                           <li><a href="/topics-example">Topic Details Example</a></li>
+                           <li><a href="/topics-example-syntax-highlight">Syntax Highlighter Example</a></li>
+                           <li><a href="/404">404</a></li>
+                        </ul>
+                     </li>
+                     {{#foreach navigation}}
+                     <li class="{{#if current}} active {{/if}}"><a href="{{url}}">{{label}}</a></li>
+                     {{/foreach}} 
+                     {{#is "home"}}
+                     {{else}}
+                     <li><a class="nav-search" data-toggle="modal" data-target="#searchmodal"><img src="{{asset "images/search-logo.png"}}" alt="nav search" /></a></li>
+                     {{/is}}
+                  </ul>

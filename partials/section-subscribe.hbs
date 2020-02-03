@@ -1,0 +1,25 @@
+     
+    {{^is "subscribe"}}
+      {{#if @labs.subscribers}}
+      <section class="newsletter-for-area bg-color3">
+         <div class="newsletter-for-wrapper text-center section-spacing">
+            <div class="container">
+               <div class="section-title mb-0">
+                  <h2 class="heading-2">{{t "Subscribe Our Newsletter"}}</h2>
+                  <p>{{t "Get the latest updates delivered right to your inbox"}}</p>
+               </div>
+
+{{subscribe_form
+          form_id="subscribe-form"
+		    button_id="themeix-sub-btn"
+          form_class="subscribe-form newsletter-form full-page"
+          placeholder=(t "Enter your email address")
+        }}
+
+       
+            </div>
+         </div>
+      </section>
+      <!-- End Newsletter For Area -->
+       {{/if}}
+    {{/is}}	

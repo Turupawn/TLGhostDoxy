@@ -37,7 +37,7 @@
     "url": "https://github.com/themeix/gulp-quickstart-pack/issues"
   },
   "dependencies": {
-    "jquery": "^3.4.0"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "gulp": "^4.0.0",
